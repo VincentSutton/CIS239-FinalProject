@@ -1,6 +1,6 @@
 # CIS239-FinalProject
 
-This project is an API based on seemingly deprecated Quote Garden API. The project is available on Github at this repository: 
+This project is an API based on seemingly deprecated Quote Garden API. The project is available on Github at this repository: https://github.com/VincentSutton/CIS239-FinalProject
 
 ## Example Output
 
