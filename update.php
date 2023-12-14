@@ -39,7 +39,7 @@
     <form action="savechanges.php" method="post">
         <?php
             echo("Quote Text: <input type=text name=quotetext value=\"$quoteText\"><br>");
-            echo("Author(if not you): <input type=text name=quoteauthor value=\"$quoteAuth\"><br>");
+            echo("Author(if not you): <input type=text name=quoteauthor><br>");
             echo("<input type=hidden name=quoteid value=$postID>");
             if(isset($originalPoster)){
                 $editPermsGranted = ($_SESSION['userID'] == $originalPoster)?'checkbox':'hidden';

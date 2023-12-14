@@ -3,7 +3,7 @@ var authVal = "";
 
 window.addEventListener("load", function () {
   httprequest = new XMLHttpRequest();
-  httprequest.open("get", "../API/endpoint.php?key=aa2e4d3c68cb21c0"); // Change this to add the key you got from Step 1
+  httprequest.open("get", "../API/endpoint.php?key=aa2e4d3c68cb21c0"); // If necessary yo umay replace this key with another one
   httprequest.send();
   httprequest.onreadystatechange = getQuotes;
 });
@@ -37,7 +37,7 @@ function fetchAuthor(e) {
     "get",
     `../API/endpoint.php?key=aa2e4d3c68cb21c0&author=${encodeURIComponent(
       authVal
-    )}` // Change this to add the key you got from Step 1
+    )}` // If necessary you may replace this key with another one
   );
   httprequest.send();
   httprequest.onreadystatechange = setQuote;

@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="register.php"> New User </a><br>
-    <a href="editdata.php"> Edit Data </a><br>
-    <a href="sample/index.html"> Sample Page </a><br>
+    <a href="register.php"> Step 1: Create a New User </a><br>
+    <a href="editdata.php"> Step 2: Edit Data </a><br>
+    <a href="sample/index.html"> Step 3: View a Sample Page </a><br>
 </body>
 </html>

@@ -11,6 +11,8 @@
     // Check if they're logged in
     if(!isset($_SESSION['username'])||!isset($_SESSION['userID'])){
         header("Location: login.php");
+    }else{
+        $keyDisplay = getQuery("SELECT User_Key FROM users WHERE User_ID = ".$_SESSION['userID'])[0]['User_Key'];
     }
 ?>
 <!DOCTYPE html>
@@ -24,7 +26,7 @@
     <a href="update.php">Add</a>
     <a href="editdata.php?lo=y">Log Out</a>
     <?php
-        echo("Currently logged in as: ".$_SESSION['username']);
+        echo("Welcome ".$_SESSION['username']."! Your API key is $keyDisplay <hr>");
         // Get every entry
         $query = "SELECT * FROM api";
         $results = getQuery($query);

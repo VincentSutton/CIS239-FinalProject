@@ -27,7 +27,7 @@
         $query = "INSERT INTO `users`(`User_EMail`, `User_Key`, `User_Name`, `User_Pass`) VALUES (\"$email\",\"$apiKey\",\"$username\",\"$password\")";
         getQuery($query);
 
-        $errorMsg = "New user created with key of ".$apiKey;
+        header("Location: editdata.php");
     }
     
 ?>
